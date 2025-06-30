@@ -1,0 +1,77 @@
+BLOCO 1
+
+1-
+
+2-
+
+3-
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+  const double PI= 3.1415;
+  double raio, area;
+  
+  cout<< "Qual a area do circulo ? ";
+  cin >> raio; 
+  
+  area = PI*raio*raio;
+  cout <<"A area do circulo : "<< area << endl;
+}
+
+4-
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int a_int = 5, b_int = 2;
+    float a_float = 5.0f, b_float = 2.0f;
+    double a_double = 5.3, b_double = 2.0;
+
+    // Operação com inteiros
+    int resultado_int = a_int / b_int;
+
+    // Operação com float
+    float resultado_float = a_float / b_float;
+
+    // Operação com double
+    double resultado_double = a_double / b_double;
+
+    // Exibição dos resultados
+    cout << "Resultado com int: " << resultado_int << endl;
+    cout << "Resultado com float: " << resultado_float << endl;
+    cout << "Resultado com double: " << resultado_double << endl;
+
+    
+}
+
+5-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+ string nome;
+ int idade;
+ 
+ cout<<"Qual o seu nome ? ";
+ cin >> nome;
+ 
+ cout<<"Qual a sua idade ?";
+ cin>>idade;
+ 
+ cout<<"Entao seu nome e "<< nome <<" e sua idade e " << idade<< endl;
+ 
+ 
+}
+
+BLOCO 2
+
+6-
