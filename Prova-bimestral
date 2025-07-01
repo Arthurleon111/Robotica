@@ -75,3 +75,117 @@ int main()
 BLOCO 2
 
 6-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int soma(int a, int b){
+    return a + b;
+
+}
+
+int main()
+{
+    int x=5;
+    int y=7;
+ 
+    int resultado= soma(x,y);
+    
+    cout<<"A soma de 5 e 7 e: "<<resultado<<endl;
+ 
+}
+
+7-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool ehPar(int a){
+    return a % 2 == 0;
+}
+
+int main(){
+    int valor;
+    
+   cout<<"Digite um numero inteiro: ";
+   cin>>valor;
+   
+    if (ehPar(valor)){
+       cout<<valor<<" e par";
+    } else{
+        cout<<valor<<" e impar"<<endl;
+
+    }
+
+}
+8-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+void mostrarMensagem(){
+    cout<<"Seja bem vindo"<<endl;
+    
+}
+
+int main(){
+    mostrarMensagem();
+ 
+}
+9-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+float quadrado(float n){
+    return  n * n;
+    
+    }
+
+int main(){
+    float valor;
+    
+    cout<<"Numero para ser calculado: ";
+    cin>>valor;
+    
+    float resultado=quadrado(valor);
+    
+    cout<<"O quadrado perfeito de "<<valor<< " e "<<resultado<<endl; 
+}
+
+10-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+float maiorNumero(float a, float b){
+    if(a>b){
+        return a;
+    }else{
+       
+        return b;
+    }
+
+}
+
+int main(){
+ float x;
+ float y;
+ 
+ cout<<"Escreva o primeiro numero: ";
+ cin >> x;
+ 
+ cout<<"Escreva o segundo numero: ";
+ cin >> y;
+ 
+ float resultado=maiorNumero(x,y);
+ cout<<"maior numero e: "<<resultado<<endl;
+}
