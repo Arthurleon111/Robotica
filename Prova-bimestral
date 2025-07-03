@@ -189,3 +189,27 @@ int main(){
  float resultado=maiorNumero(x,y);
  cout<<"maior numero e: "<<resultado<<endl;
 }
+
+11-
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+int main()
+{
+int var1;
+int* ponto1;
+ponto1=&var1;
+
+
+cout<<"Valor da var 1: ";
+cin>>var1;
+
+cout<<"O valor da variavel e: " <<var1<<" e o endereco e: "<<ponto1<<endl;
+
+}
+
+12-
