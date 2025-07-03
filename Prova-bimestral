@@ -213,3 +213,95 @@ cout<<"O valor da variavel e: " <<var1<<" e o endereco e: "<<ponto1<<endl;
 }
 
 12-
+#include <iostream>
+using namespace std;
+
+
+void dobrar(int* ptr) {
+    *ptr = (*ptr) * 2;  
+}
+
+int main() {
+    int numero;
+
+    cout << "Digite um número inteiro: ";
+    cin >> numero;
+
+    dobrar(&numero);
+
+    cout << "O dobro do número é: " << numero << endl;
+
+  
+}
+
+13-
+#include <iostream>
+using namespace std;
+
+
+void trocar(int* a, int* b){
+    int troca=*a;
+    *a=*b;
+    *b=troca;
+    }
+
+int main() {
+    int x, y;
+    
+    cout << "Digite um numero inteiro: ";
+    cin>> x;
+    
+    cout<< "Digite outro numero inteiro: ";
+    cin>>y;
+    
+    cout<<"Antes da troca: "<< x<<" " << y <<endl;
+    
+    trocar(&x,&y);
+    
+    cout<< "Depois da troca:"<<x<<" "<<y<<endl;
+    
+    
+
+  
+}
+
+14-
+Duvida!!!!
+
+15-
+#include <iostream>
+using namespace std;
+
+
+void nota(double* a){
+    if(*a>=7){
+        
+        cout<<"Aprovado"<<endl;
+        
+        }else{
+        cout<<"reprovado"<<endl;
+        
+        }
+    
+    
+    }
+
+int main() {
+  double x;
+  
+    cout<<"digite a nota: ";
+  cin>>x;
+
+  if(x<0 || x>10){
+      cout<<"Valor invalido, tente um numero de 1 a 10"<<endl;
+      
+      }else{
+          nota(&x);
+        }
+    
+  
+  
+}
+
+BLOCO 4
+16-
