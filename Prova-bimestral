@@ -370,3 +370,84 @@ int main() {
 
 BLOCO 4
 16-
+#include <iostream>
+#include<string>
+using namespace std;
+
+void temp(float& a, float& b ){
+    float troca=a;
+    a=b;
+    b=troca;
+    
+    
+}
+
+
+int main(){
+    
+    float x;
+    float y;
+    
+    cout<<"Digite o primeiro valor: ";
+    cin>>x;
+    
+    cout<<"Digite o segundo valor: ";
+    cin>>y;
+    
+    cout<<"Antes da troca: "<<x<<" "<<y<<endl;
+    
+    temp(x,y);
+    
+    cout<<"Depois da troca: "<<x<<" "<<y<<endl;
+}
+
+17-
+#include <iostream>
+#include<string>
+using namespace std;
+
+void altera(int a, int& b){
+    a=5;
+    b=10;
+    
+    cout<<"Funcao valor(dentro da funcao) : "<<a<<"\nFuncao referencia: "<<b<<endl;
+    
+}
+
+int main() {
+    int x= 3;
+    int y = 8;
+    
+    cout << "Funcao valor antes da troca: "<<x<<"\nFuncao referencia: "<<y<<endl;
+    
+    altera(x,y);
+    
+    cout<<"Funcao valor depois da troca: "<<x<<"\nFuncao referencia depois da troca : "<<y<<endl;
+
+    
+}
+
+18-
+#include <iostream>
+#include<string>
+using namespace std;
+
+void incrementar(int* p){
+    (*p)++;
+    
+}
+
+
+int main(){
+    int x;
+    
+    cout<<"Digite um valor a ser incrementado: ";
+    cin>>x;
+    
+    incrementar(&x);
+    cout<<"Apos a incrementacao: "<<x<<endl;
+    
+  
+}
+
+19-
