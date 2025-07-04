@@ -1,8 +1,73 @@
 BLOCO 1
 
 1-
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int inteiro = 42;
+    
+
+    float numeroDecimal = 3.14f;
+    double numeroMaiorDecimal = 2.718281828;
+
+
+    char letra = 'A';
+
+    
+    bool verdadeiroOuFalso = true;
+
+    
+    cout << "int: " << inteiro << endl;
+
+    cout << "float: " << numeroDecimal << endl;
+    cout << "double: " << numeroMaiorDecimal << endl;
+    
+
+    cout << "char: " << letra << endl;
+    cout << "bool: " << verdadeiroOuFalso << endl;
+
+}
+
 
 2-
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+
+int main() {
+
+    float x;
+    float y;
+    double soma;
+    double subtracao;
+    double multiplicacao;
+    double divisao;
+    
+    cout<<"Digite o primeiro valor: ";
+    cin>>x;
+    
+    cout<<"Digite o segundo valor: ";
+    cin>>y;
+    
+    soma=x+y;
+    subtracao=x-y;
+    multiplicacao=x*y;
+    divisao=x/y;
+
+    cout<<"A soma e: "<<soma<<endl;
+    cout<<"A subtracao e: "<<subtracao <<endl;
+    cout<<"a multiplicacao e: "<<multiplicacao<<endl;
+    cout<<"a divisao e: "<<divisao<<endl;
+    
+  
+  
+}
+
 
 3-
 #include <iostream>
